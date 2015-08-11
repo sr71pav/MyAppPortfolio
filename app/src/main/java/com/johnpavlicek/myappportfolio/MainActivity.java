@@ -16,42 +16,44 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    public void onClickTBD(View view)
+    public void onClickSpotify(View view)
     {
-        Context context = getApplicationContext();
-        CharSequence text = getText(R.string.action_tbd);
-        int duration = Toast.LENGTH_SHORT;
+        showToast(getText(R.string.action_spotify).toString());
+    }
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+    public void onClickScore(View view)
+    {
+        showToast(getText(R.string.action_score).toString());
+    }
+
+    public void onClickLibrary(View view)
+    {
+        showToast(getText(R.string.action_library).toString());
+    }
+
+    public void onClickBuildIt(View view)
+    {
+        showToast(getText(R.string.action_buildit).toString());
+    }
+
+    public void onClickReader(View view)
+    {
+        showToast(getText(R.string.action_reader).toString());
     }
 
     public void onClickCapstone(View view)
     {
+        showToast(getText(R.string.action_capstone).toString());
+    }
+
+    private void showToast(String appName)
+    {
         Context context = getApplicationContext();
-        CharSequence text = getText(R.string.action_capstone);
+        CharSequence text = getText(R.string.action_button_launch);
+        text = text + " ";
+        text = text + appName;
+        text = text + " ";
+        text = text + (String) getText(R.string.action_app);
         int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context, text, duration);

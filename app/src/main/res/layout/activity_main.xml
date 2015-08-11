@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:paddingBottom="24dp"/>
 
@@ -19,35 +19,35 @@
         android:layout_height="wrap_content"
         android:text="@string/spotify"
         style="@style/StandardButton"
-        android:onClick="onClickTBD"/>
+        android:onClick="onClickSpotify"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/scores"
         style="@style/StandardButton"
-        android:onClick="onClickTBD"/>
+        android:onClick="onClickScore"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/library"
         style="@style/StandardButton"
-        android:onClick="onClickTBD"/>
+        android:onClick="onClickLibrary"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/build_bigger"
         style="@style/StandardButton"
-        android:onClick="onClickTBD"/>
+        android:onClick="onClickBuildIt"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/xyz_reader"
         style="@style/StandardButton"
-        android:onClick="onClickTBD"/>
+        android:onClick="onClickReader"/>
 
     <Button
         android:layout_width="match_parent"
